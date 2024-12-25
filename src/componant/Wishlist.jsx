@@ -36,7 +36,9 @@ if(status==='pending')
 if(status==='error')
  toast.error('item did not deleted');
     
-    
+    if (!data || !data.data || !Array.isArray(data.data.data)) {
+        return <div className="text-center text-red-600">No items found in the wishlist</div>;
+    }
   return (
       <>
  <Helmet>
