@@ -62,8 +62,8 @@ function Navbar() {
           <Typography className='dark:text-white'
             variant="h5"
             noWrap
-            component="a"
-            href="/home"
+            component={Link}
+            to="/home"
             // change to home 
             sx={{
               mr: 2,
