@@ -25,8 +25,8 @@ const Products = lazy(() => import('./componant/Products'));
 
 
  function App() {
-// let router = createHashRouter([{
-let router = createBrowserRouter([{
+let router = createHashRouter([{
+// let router = createBrowserRouter([{
   path: '/',element:<Layout></Layout>,children:[
     {path:'/brand',element:<ProtectedRoute><Suspense fallback={<Loading></Loading>}><Brand/></Suspense></ProtectedRoute>},
     {path:'/cart',element: <ProtectedRoute><Cart></Cart></ProtectedRoute>},
