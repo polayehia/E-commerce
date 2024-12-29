@@ -24,10 +24,10 @@ export default function Wishlist() {
 
     if (isLoading)
       return <Loading></Loading>
-      if (isError)
-return <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-      <span className="font-medium">{error?.message||'An error occurred'}</span> 
-    </div>
+//       if (isError)
+// return <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+//       <span className="font-medium">{error?.message||'An error occurred'}</span> 
+//     </div>
       
 if(status==='success')
   toast.success('item deleted')
